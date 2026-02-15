@@ -1,1239 +1,253 @@
-let cantNE = 33
-let cantEP = 0
-let cantE = 0
-
-const clickedButtons = new Set();
-
-function CRPLasCondes(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#lascondes').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-        clickedButtons.add(buttonId); // no hace conflicto que sea el mismo buttonId para todos los bp en la funcion
-        
-        document.querySelector('#lascondes').classList.add('liOn')
-        document.querySelector('#blascondes').classList.add('botonOn')
-
-        localStorage.setItem('01','crp las condes') // guardado permanente
-    }
-}
-
-
-function CRPSanBernardo(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#sanbernardo').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#sanbernardo').classList.add('liOn')
-        document.querySelector('#bsanbernardo').classList.add('botonOn')
-
-        localStorage.setItem('06','crp san bernardo') 
-    }
-}
-
-function CRPvalparaiso(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#valparaiso').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#valparaiso').classList.add('liOn')
-        document.querySelector('#bvalparaiso').classList.add('botonOn')
-
-        localStorage.setItem('09','crp valparaiso') 
-    }
-}
-
-function CRParica(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#arica').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#arica').classList.add('liOn')
-        document.querySelector('#barica').classList.add('botonOn')
-
-        localStorage.setItem('11','crp arica') 
-    }
-}
-
-function CRPiquique(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#iquique').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#iquique').classList.add('liOn')
-        document.querySelector('#biquique').classList.add('botonOn')
-
-        localStorage.setItem('12','crp iquique') 
-    }
-}
-
-function CRPlaserena(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#laserena').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#laserena').classList.add('liOn')
-        document.querySelector('#blaserena').classList.add('botonOn')
-
-        localStorage.setItem('13','crp la serena') 
-    }
-}
-
-function CRPtemuco(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#temuco').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#temuco').classList.add('liOn')
-        document.querySelector('#btemuco').classList.add('botonOn')
-
-        localStorage.setItem('14','crp san temuco') 
-    }
-}
-
-function CRPconcepcion(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#concepcion').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#concepcion').classList.add('liOn')
-        document.querySelector('#bconcepcion').classList.add('botonOn')
-
-        localStorage.setItem('15','crp concepcion') 
-    }
-}
-
-function CRPtalca(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#talca').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#talca').classList.add('liOn')
-        document.querySelector('#btalca').classList.add('botonOn')
-
-        localStorage.setItem('16','crp talca') 
-    }
-}
-
-function CRPrancagua(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#rancagua').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#rancagua').classList.add('liOn')
-        document.querySelector('#brancagua').classList.add('botonOn')
-
-        localStorage.setItem('17','crp rancagua') 
-    }
-}
-
-function CRPcopiapo(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#copiapo').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#copiapo').classList.add('liOn')
-        document.querySelector('#bcopiapo').classList.add('botonOn')
-
-        localStorage.setItem('18','crp san copiapo') 
-    }
-}
-
-function CRPantofagasta(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#antofagasta').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#antofagasta').classList.add('liOn')
-        document.querySelector('#bantofagasta').classList.add('botonOn')
-
-        localStorage.setItem('19','crp antofagasta') 
-    }
-}
-
-function CRPosorno(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#osorno').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#osorno').classList.add('liOn')
-        document.querySelector('#bosorno').classList.add('botonOn')
-
-        localStorage.setItem('22','crp osorno') 
-    }
-}
-
-function CRPcardenalcaro(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#cardenalcaro').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#cardenalcaro').classList.add('liOn')
-        document.querySelector('#bcardenalcaro').classList.add('botonOn')
-
-        localStorage.setItem('24','crp cardenal caro') 
-    }
-}
-
-function CRPmaipu(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#maipu').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#maipu').classList.add('liOn')
-        document.querySelector('#bmaipu').classList.add('botonOn')
-
-        localStorage.setItem('31','crp maipu') 
-    }
-}
-
-function CRPcurico(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#curico').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#curico').classList.add('liOn')
-        document.querySelector('#bcurico').classList.add('botonOn')
-
-        localStorage.setItem('32','crp curico') 
-    }
-}
-
-function CRPvaldivia(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#valdivia').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#valdivia').classList.add('liOn')
-        document.querySelector('#bvaldivia').classList.add('botonOn')
-
-        localStorage.setItem('40','crp valdivia') 
-    }
-}
-
-function CRPlosandes(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#losandes').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#losandes').classList.add('liOn')
-        document.querySelector('#blosandes').classList.add('botonOn')
-
-        localStorage.setItem('43','crp los andes') 
-    }
-}
-
-function CRPpuertomontt(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#puertomontt').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#puertomontt').classList.add('liOn')
-        document.querySelector('#bpuertomontt').classList.add('botonOn')
-
-        localStorage.setItem('45','crp puerto montt') 
-    }
-}
-
-function CRPsanfernando(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#sanfernando').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#sanfernando').classList.add('liOn')
-        document.querySelector('#bsanfernando').classList.add('botonOn')
-
-        localStorage.setItem('51','crp san fernando') 
-    }
-}
-
-function CRPquilpoe(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#quilpoe').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#quilpoe').classList.add('liOn')
-        document.querySelector('#bquilpoe').classList.add('botonOn')
-
-        localStorage.setItem('52','crp quilpoe') 
-    }
-}
-
-function CRPlinares(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#linares').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#linares').classList.add('liOn')
-        document.querySelector('#blinares').classList.add('botonOn')
-
-        localStorage.setItem('53','crp linares') 
-    }
-}
-
-function CRPpuntaarenas(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#puntaarenas').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#puntaarenas').classList.add('liOn')
-        document.querySelector('#bpuntaarenas').classList.add('botonOn')
-
-        localStorage.setItem('55','crp punta arenas') 
-    }
-}
-
-function CRPsanantonio(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#sanantonio').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#sanantonio').classList.add('liOn')
-        document.querySelector('#bsanantonio').classList.add('botonOn')
-
-        localStorage.setItem('56','crp san antonio') 
-    }
-}
-
-function CRPlosangeles(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#losangeles').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#losangeles').classList.add('liOn')
-        document.querySelector('#blosangeles').classList.add('botonOn')
-
-        localStorage.setItem('57','crp los angeles') 
-    }
-}
-
-function CRPcalama(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#calama').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#calama').classList.add('liOn')
-        document.querySelector('#bcalama').classList.add('botonOn')
-
-        localStorage.setItem('58','crp calama') 
-    }
-}
-
-function CRPchillan(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#chillan').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#chillan').classList.add('liOn')
-        document.querySelector('#bchillan').classList.add('botonOn')
-
-        localStorage.setItem('62','crp chillan') 
-    }
-}
-
-function CRPhuerfanos(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#huerfanos').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#huerfanos').classList.add('liOn')
-        document.querySelector('#bhuerfanos').classList.add('botonOn')
-
-        localStorage.setItem('64','crp huerfanos') 
-    }
-}
-
-function CRPovalle(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#ovalle').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#ovalle').classList.add('liOn')
-        document.querySelector('#bovalle').classList.add('botonOn')
-
-        localStorage.setItem('68','crp ovalle') 
-    }
-}
-
-function CRPquillota(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#quillota').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#quillota').classList.add('liOn')
-        document.querySelector('#bquillota').classList.add('botonOn')
-
-        localStorage.setItem('72','crp quillota') 
-    }
-}
-
-function CRPmiraflores(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#miraflores').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#miraflores').classList.add('liOn')
-        document.querySelector('#bmiraflores').classList.add('botonOn')
-
-        localStorage.setItem('76','crp miraflores') 
-    }
-}
-
-function CRPcastro(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#castro').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#castro').classList.add('liOn')
-        document.querySelector('#bcastro').classList.add('botonOn')
-
-        localStorage.setItem('79','crp castro') 
-    }
-}
-
-function CRPvallenar(mensaje, buttonId) {
-    if (!clickedButtons.has(buttonId)) {
-        document.querySelector('#vallenar').textContent = mensaje;
-        cantE++;
-        cantNE--;
-        document.querySelector('#cantidadEJ').textContent = cantE;
-        document.querySelector('#cantidadNE').textContent = cantNE;
-
-        clickedButtons.add(buttonId); 
-
-        document.querySelector('#vallenar').classList.add('liOn') 
-        document.querySelector('#bvallenar').classList.add('botonOn') 
-
-        localStorage.setItem('80','crp vallenar') 
-    }
-}
-
-
-
-document.querySelector('#crpalmacenados').addEventListener('click',()=>{
-    recuperarCrpOrdenado()
-})
-
-
-function recuperarCrpOrdenado() {
-  
-    let crps = [];
-    for (let x = 0; x < localStorage.length; x++) {
-        const clave = localStorage.key(x);
-        const valor = localStorage.getItem(clave);
-        crps.push({ clave: parseInt(clave, 10), valor }); 
-    }
-
-    crps.sort((a, b) => a.clave - b.clave);
-
-   
-    let contenido = '';
-    for (let item of crps) {
-        contenido += `${item.clave}: ${item.valor}<br>`;
-    }
-
-
-    document.querySelector('#crpguardados').innerHTML = contenido;
-}
-
-
-
-const valoresOriginales = {
-  lascondes: '1. CRP LAS CONDES - NO EJECUTADO',
-  sanbernardo: '6. CRP SAN BERNARDO - NO EJECUTADO',
-  valparaiso: '9. CRP VALPARAISO - NO EJECUTADO',
-  arica: '11. CRP ARICA - NO EJECUTADO',
-  iquique: '12. CRP IQUIQUE - NO EJECUTADO',
-  laserena: '13. CRP LA SERENA - NO EJECUTADO',
-  temuco: '14. CRP TEMUCO - NO EJECUTADO',
-  concepcion: '15. CRP CONCEPCIÓN - NO EJECUTADO',
-  talca: '16. CRP TALCA - NO EJECUTADO',
-  rancagua: '17. CRP RANCAGUA - NO EJECUTADO',
-  copiapo: '18. CRP COPIAPÓ - NO EJECUTADO',
-  antofagasta: '19. CRP ANTOFAGASTA - NO EJECUTADO',
-  osorno: '22. CRP OSORNO - NO EJECUTADO',
-  cardenalcaro: '24. CRP CARDENAL CARO - NO EJECUTADO',
-  maipu: '31. CRP MAIPU - NO EJECUTADO',
-  curico: '32. CRP CURICÓ - NO EJECUTADO',
-  valdivia: '40. CRP VALDIVIA - NO EJECUTADO',
-  losandes: '43. CRP LOS ANDES - NO EJECUTADO',
-  puertomontt: '45. CRP PUERTO MONTT - NO EJECUTADO',
-  sanfernando: '51. CRP SAN FERNANDO - NO EJECUTADO',
-  quilpoe: '52. CRP QUILPOÉ - NO EJECUTADO',
-  linares: '53. CRP LINARES - NO EJECUTADO',
-  puntaarenas: '55. CRP PUNTA ARENAS - NO EJECUTADO',
-  sanantonio: '56. CRP SAN ANTONIO - NO EJECUTADO',
-  losangeles: '57. CRP LOS ANGELES - NO EJECUTADO',
-  calama: '58. CRP CALAMA - NO EJECUTADO',
-  chillan: '62. CRP CHILLÁN - NO EJECUTADO',
-  huerfanos: '64. CRP HUERFANOS - NO EJECUTADO',
-  ovalle: '68. CRP OVALLE - NO EJECUTADO',
-  quillota: '72. CRP QUILLOTA - NO EJECUTADO',
-  miraflores: '76. CRP MIRAFLORES - NO EJECUTADO',
-  castro: '79. CRP CASTRO - NO EJECUTADO',
-  vallenar: '80. CRP VALLENAR - NO EJECUTADO'
+const CRP_CONFIG = [
+  { code: '01', fn: 'CRPLasCondes', liId: 'lascondes', buttonId: 'blascondes', checkboxId: 'clascondes', title: '1. CRP LAS CONDES', storage: 'las condes' },
+  { code: '06', fn: 'CRPSanBernardo', liId: 'sanbernardo', buttonId: 'bsanbernardo', checkboxId: 'csanbernardo', title: '6. CRP SAN BERNARDO', storage: 'san bernardo' },
+  { code: '09', fn: 'CRPvalparaiso', liId: 'valparaiso', buttonId: 'bvalparaiso', checkboxId: 'cvalparaiso', title: '9. CRP VALPARAISO', storage: 'valparaiso' },
+  { code: '11', fn: 'CRParica', liId: 'arica', buttonId: 'barica', checkboxId: 'carica', title: '11. CRP ARICA', storage: 'arica' },
+  { code: '12', fn: 'CRPiquique', liId: 'iquique', buttonId: 'biquique', checkboxId: 'ciquique', title: '12. CRP IQUIQUE', storage: 'iquique' },
+  { code: '13', fn: 'CRPlaserena', liId: 'laserena', buttonId: 'blaserena', checkboxId: 'claserena', title: '13. CRP LA SERENA', storage: 'la serena' },
+  { code: '14', fn: 'CRPtemuco', liId: 'temuco', buttonId: 'btemuco', checkboxId: 'ctemuco', title: '14. CRP TEMUCO', storage: 'temuco' },
+  { code: '15', fn: 'CRPconcepcion', liId: 'concepcion', buttonId: 'bconcepcion', checkboxId: 'cconcepcion', title: '15. CRP CONCEPCIÓN', storage: 'concepcion' },
+  { code: '16', fn: 'CRPtalca', liId: 'talca', buttonId: 'btalca', checkboxId: 'ctalca', title: '16. CRP TALCA', storage: 'talca' },
+  { code: '17', fn: 'CRPrancagua', liId: 'rancagua', buttonId: 'brancagua', checkboxId: 'crancagua', title: '17. CRP RANCAGUA', storage: 'rancagua' },
+  { code: '18', fn: 'CRPcopiapo', liId: 'copiapo', buttonId: 'bcopiapo', checkboxId: 'ccopiapo', title: '18. CRP COPIAPÓ', storage: 'copiapo' },
+  { code: '19', fn: 'CRPantofagasta', liId: 'antofagasta', buttonId: 'bantofagasta', checkboxId: 'cantofagasta', title: '19. CRP ANTOFAGASTA', storage: 'antofagasta' },
+  { code: '22', fn: 'CRPosorno', liId: 'osorno', buttonId: 'bosorno', checkboxId: 'cosorno', title: '22. CRP OSORNO', storage: 'osorno' },
+  { code: '24', fn: 'CRPcardenalcaro', liId: 'cardenalcaro', buttonId: 'bcardenalcaro', checkboxId: 'ccardenalcaro', title: '24. CRP CARDENAL CARO', storage: 'cardenal caro' },
+  { code: '31', fn: 'CRPmaipu', liId: 'maipu', buttonId: 'bmaipu', checkboxId: 'cmaipu', title: '31. CRP MAIPU', storage: 'maipu' },
+  { code: '32', fn: 'CRPcurico', liId: 'curico', buttonId: 'bcurico', checkboxId: 'ccurico', title: '32. CRP CURICÓ', storage: 'curico' },
+  { code: '40', fn: 'CRPvaldivia', liId: 'valdivia', buttonId: 'bvaldivia', checkboxId: 'cvaldivia', title: '40. CRP VALDIVIA', storage: 'valdivia' },
+  { code: '43', fn: 'CRPlosandes', liId: 'losandes', buttonId: 'blosandes', checkboxId: 'closandes', title: '43. CRP LOS ANDES', storage: 'los andes' },
+  { code: '45', fn: 'CRPpuertomontt', liId: 'puertomontt', buttonId: 'bpuertomontt', checkboxId: 'cpuertomontt', title: '45. CRP PUERTO MONTT', storage: 'puerto montt' },
+  { code: '51', fn: 'CRPsanfernando', liId: 'sanfernando', buttonId: 'bsanfernando', checkboxId: 'csanfernando', title: '51. CRP SAN FERNANDO', storage: 'san fernando' },
+  { code: '52', fn: 'CRPquilpoe', liId: 'quilpoe', buttonId: 'bquilpoe', checkboxId: 'cquilpoe', title: '52. CRP QUILPOÉ', storage: 'quilpoe' },
+  { code: '53', fn: 'CRPlinares', liId: 'linares', buttonId: 'blinares', checkboxId: 'clinares', title: '53. CRP LINARES', storage: 'linares' },
+  { code: '55', fn: 'CRPpuntaarenas', liId: 'puntaarenas', buttonId: 'bpuntaarenas', checkboxId: 'cpuntaarenas', title: '55. CRP PUNTA ARENAS', storage: 'punta arenas' },
+  { code: '56', fn: 'CRPsanantonio', liId: 'sanantonio', buttonId: 'bsanantonio', checkboxId: 'csanantonio', title: '56. CRP SAN ANTONIO', storage: 'san antonio' },
+  { code: '57', fn: 'CRPlosangeles', liId: 'losangeles', buttonId: 'blosangeles', checkboxId: 'closangeles', title: '57. CRP LOS ANGELES', storage: 'los angeles' },
+  { code: '58', fn: 'CRPcalama', liId: 'calama', buttonId: 'bcalama', checkboxId: 'ccalama', title: '58. CRP CALAMA', storage: 'calama' },
+  { code: '62', fn: 'CRPchillan', liId: 'chillan', buttonId: 'bchillan', checkboxId: 'cchillan', title: '62. CRP CHILLAN', storage: 'chillan' },
+  { code: '64', fn: 'CRPhuerfanos', liId: 'huerfanos', buttonId: 'bhuerfanos', checkboxId: 'chuerfanos', title: '64. CRP HUERFANOS', storage: 'huerfanos' },
+  { code: '68', fn: 'CRPovalle', liId: 'ovalle', buttonId: 'bovalle', checkboxId: 'covalle', title: '68. CRP OVALLE', storage: 'ovalle' },
+  { code: '72', fn: 'CRPquillota', liId: 'quillota', buttonId: 'bquillota', checkboxId: 'cquillota', title: '72. CRP QUILLOTA', storage: 'quillota' },
+  { code: '76', fn: 'CRPmiraflores', liId: 'miraflores', buttonId: 'bmiraflores', checkboxId: 'cmiraflores', title: '76. CRP MIRAFLORES', storage: 'miraflores' },
+  { code: '79', fn: 'CRPcastro', liId: 'castro', buttonId: 'bcastro', checkboxId: 'ccastro', title: '79. CRP CASTRO', storage: 'castro' },
+  { code: '80', fn: 'CRPvallenar', liId: 'vallenar', buttonId: 'bvallenar', checkboxId: 'cvallenar', title: '80. CRP VALLENAR', storage: 'vallenar' }
+];
+
+const state = {
+  cantE: 0,
+  cantEP: 0,
+  cantNE: CRP_CONFIG.length,
+  clickedButtons: new Set()
 };
 
-document.querySelector('#clearStorage').addEventListener('click',()=>{
-    limpiarStorageCRP()
-})
+const $ = (selector) => document.querySelector(selector);
 
-function limpiarStorageCRP (){
-    if (confirm('¿Estás seguro de que deseas eliminar toda la información de los CRP en esta sesión?')) {
-        localStorage.clear();
-        alert('Toda la información de los CRP en esta aplicación ha sido restaurada');
-        
-        cantE=0
-        cantNE=33
-        document.querySelector('#crpguardados').textContent='RECUPERACIÓN DE CRPS NO EJECUTADA'
-        document.querySelector('#cantidadEJ').textContent=0
-        document.querySelector('#cantidadEP').textContent=0
-        document.querySelector('#cantidadNE').textContent=33
+const els = {
+  cantidadEJ: $('#cantidadEJ'),
+  cantidadEP: $('#cantidadEP'),
+  cantidadNE: $('#cantidadNE'),
+  crpGuardados: $('#crpguardados'),
+  btnRecuperar: $('#crpalmacenados'),
+  btnReset: $('#clearStorage')
+};
 
+function noEjecutadoText(cfg) {
+  return `${cfg.title} - NO EJECUTADO`;
+}
 
+function ejecutadoText(cfg) {
+  return `${cfg.title} - EJECUTADO`;
+}
 
-  const ulli1 = document.querySelector('#ulcrp1')
-  const gli1 = ulli1.querySelectorAll('li')
-  gli1.forEach(li => {
-    li.classList.remove('liOn')
-  })
+function renderCounters() {
+  els.cantidadEJ.textContent = state.cantE;
+  els.cantidadEP.textContent = state.cantEP;
+  els.cantidadNE.textContent = state.cantNE;
+}
 
+function updatePendingCountFromDOM() {
+  state.cantEP = CRP_CONFIG.reduce((acc, cfg) => {
+    const checkbox = document.getElementById(cfg.checkboxId);
+    return acc + (checkbox && checkbox.checked ? 1 : 0);
+  }, 0);
+  renderCounters();
+}
 
+function marcarEjecutado(cfg, buttonToken) {
+  const clickKey = buttonToken || `boton${parseInt(cfg.code, 10)}`;
+  if (state.clickedButtons.has(clickKey)) return;
 
-  const divBotones1 = document.querySelector('#bpgrupo1');
-  const botones1 = divBotones1.querySelectorAll('button');
-  botones1.forEach(boton => {
-    boton.classList.remove('botonOn');
-  })
+  const li = document.getElementById(cfg.liId);
+  const button = document.getElementById(cfg.buttonId);
 
+  if (li) li.textContent = ejecutadoText(cfg);
+  if (li) li.classList.add('liOn');
+  if (button) button.classList.add('botonOn');
 
-  const ulli2 = document.querySelector('#ulcrp2')
-  const gli2 = ulli2.querySelectorAll('li')
-  gli2.forEach(li => {
-    li.classList.remove('liOn')
-  })
+  state.clickedButtons.add(clickKey);
+  state.cantE += 1;
+  state.cantNE -= 1;
+  renderCounters();
 
-  const divBotones2 = document.querySelector('#bpgrupo2');
-  const botones2 = divBotones2.querySelectorAll('button');
-  botones2.forEach(boton => {
-    boton.classList.remove('botonOn');
-  })
-  
-  const ulli3 = document.querySelector('#ulcrp3')
-  const gli3 = ulli3.querySelectorAll('li')
-  gli3.forEach(li => {
-    li.classList.remove('liOn')
-  })
+  localStorage.setItem(cfg.code, `crp ${cfg.storage}`);
+}
 
-  const divBotones3 = document.querySelector('#bpgrupo3');
-  const botones3 = divBotones3.querySelectorAll('button');
-  botones3.forEach(boton => {
-    boton.classList.remove('botonOn');
-  })
-       
-  clickedButtons.clear(); 
+function bindCrpActions() {
+  CRP_CONFIG.forEach((cfg) => {
+    window[cfg.fn] = (_mensaje, buttonId) => marcarEjecutado(cfg, buttonId);
 
+    const checkbox = document.getElementById(cfg.checkboxId);
+    const li = document.getElementById(cfg.liId);
 
+    if (!checkbox || !li) return;
 
-  for (const id in valoresOriginales) {
-    const liElement = document.querySelector(`#${id}`);
-    if (liElement) {
-      liElement.textContent = valoresOriginales[id];
-    }
-  }
-
- 
-
-  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  checkboxes.forEach(checkbox => {
-      checkbox.checked = false;  
+    checkbox.addEventListener('change', () => {
+      li.textContent = checkbox.checked ? 'EN ESPERA' : ejecutadoText(cfg);
+      updatePendingCountFromDOM();
     });
+  });
+}
 
+function recuperarCrpOrdenado() {
+  const crps = [];
+
+  for (let i = 0; i < localStorage.length; i += 1) {
+    const key = localStorage.key(i);
+    const numericKey = parseInt(key, 10);
+    if (Number.isNaN(numericKey)) continue;
+    crps.push({ key: numericKey, value: localStorage.getItem(key) });
+  }
+
+  crps.sort((a, b) => a.key - b.key);
+
+  els.crpGuardados.innerHTML =
+    crps.length > 0
+      ? crps.map((item) => `${item.key}: ${item.value}`).join('<br>')
+      : 'RECUPERACIÓN DE CRPS NO EJECUTADA';
+}
+
+function limpiarStorageCRP() {
+  if (!confirm('¿Estás seguro de que deseas eliminar toda la información de los CRP en esta sesión?')) return;
+
+  localStorage.clear();
+  alert('Toda la información de los CRP en esta aplicación ha sido restaurada');
+
+  state.cantE = 0;
+  state.cantEP = 0;
+  state.cantNE = CRP_CONFIG.length;
+  state.clickedButtons.clear();
+
+  CRP_CONFIG.forEach((cfg) => {
+    const li = document.getElementById(cfg.liId);
+    const button = document.getElementById(cfg.buttonId);
+    const checkbox = document.getElementById(cfg.checkboxId);
+
+    if (li) {
+      li.textContent = noEjecutadoText(cfg);
+      li.classList.remove('liOn');
     }
+
+    if (button) button.classList.remove('botonOn');
+    if (checkbox) checkbox.checked = false;
+  });
+
+  els.crpGuardados.textContent = 'RECUPERACIÓN DE CRPS NO EJECUTADA';
+  renderCounters();
 }
 
+function initCronometro() {
+  let horas = 0;
+  let minutos = 0;
+  let segundos = 0;
+  let intervalo = null;
+  let pausado = false;
 
+  const tiempo = $('#tiempo');
+  const btnIniciar = $('#iniciar');
+  const btnPausar = $('#pausar');
+  const btnDetener = $('#detener');
 
-const ck1 = document.querySelector('#clascondes')
-ck1.addEventListener('change',()=>{
-if(ck1.checked) {
-    document.querySelector('#lascondes').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#lascondes').textContent='1. CRP LAS CONDES - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
+  const formatearTiempo = (h, m, s) =>
+    `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
 
-const ck2 = document.querySelector('#csanbernardo')
-ck2.addEventListener('change',()=>{
-if(ck2.checked) {
-    document.querySelector('#sanbernardo').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#sanbernardo').textContent='6. CRP SAN BERNARDO - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
+  const actualizarTiempo = () => {
+    segundos += 1;
+    if (segundos === 60) {
+      segundos = 0;
+      minutos += 1;
+    }
+    if (minutos === 60) {
+      minutos = 0;
+      horas += 1;
+    }
+    tiempo.textContent = formatearTiempo(horas, minutos, segundos);
+  };
 
-const ck3 = document.querySelector('#cvalparaiso')
-ck3.addEventListener('change',()=>{
-if(ck3.checked) {
-    document.querySelector('#valparaiso').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#valparaiso').textContent='9. CRP VALPARAISO - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck4 = document.querySelector('#carica')
-ck4.addEventListener('change',()=>{
-if(ck4.checked) {
-    document.querySelector('#arica').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#arica').textContent='11. CRP ARICA - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck5 = document.querySelector('#ciquique')
-ck5.addEventListener('change',()=>{
-if(ck5.checked) {
-    document.querySelector('#iquique').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#iquique').textContent='12. CRP IQUIQUE - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck6 = document.querySelector('#claserena')
-ck6.addEventListener('change',()=>{
-if(ck6.checked) {
-    document.querySelector('#laserena').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#laserena').textContent='13. CRP LA SERENA - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck7 = document.querySelector('#ctemuco')
-ck7.addEventListener('change',()=>{
-if(ck7.checked) {
-    document.querySelector('#temuco').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#temuco').textContent='14. CRP TEMUCO - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck8 = document.querySelector('#cconcepcion')
-ck8.addEventListener('change',()=>{
-if(ck8.checked) {
-    document.querySelector('#concepcion').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#concepcion').textContent='15. CRP CONCEPCIÓN - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck9 = document.querySelector('#ctalca')
-ck9.addEventListener('change',()=>{
-if(ck9.checked) {
-    document.querySelector('#talca').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#talca').textContent='16. CRP TALCA - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck10 = document.querySelector('#crancagua')
-ck10.addEventListener('change',()=>{
-if(ck10.checked) {
-    document.querySelector('#rancagua').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#rancagua').textContent='17. CRP RANCAGUA - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck11 = document.querySelector('#ccopiapo')
-ck11.addEventListener('change',()=>{
-if(ck11.checked) {
-    document.querySelector('#copiapo').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#copiapo').textContent='18. CRP COPIAPÓ - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck12 = document.querySelector('#cantofagasta')
-ck12.addEventListener('change',()=>{
-if(ck12.checked) {
-    document.querySelector('#antofagasta').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#antofagasta').textContent='19. CRP ANTOFAGASTA - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck13 = document.querySelector('#cosorno')
-ck13.addEventListener('change',()=>{
-if(ck13.checked) {
-    document.querySelector('#osorno').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#osorno').textContent='22. CRP OSORNO - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck14 = document.querySelector('#ccardenalcaro')
-ck14.addEventListener('change',()=>{
-if(ck14.checked) {
-    document.querySelector('#cardenalcaro').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#cardenalcaro').textContent='24. CRP CARDENALCARO - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck15 = document.querySelector('#cmaipu')
-ck15.addEventListener('change',()=>{
-if(ck15.checked) {
-    document.querySelector('#maipu').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#maipu').textContent='31. CRP MAIPU - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck16 = document.querySelector('#ccurico')
-ck16.addEventListener('change',()=>{
-if(ck16.checked) {
-    document.querySelector('#curico').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#curico').textContent='32. CRP CURICÓ - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck17 = document.querySelector('#cvaldivia')
-ck17.addEventListener('change',()=>{
-if(ck17.checked) {
-    document.querySelector('#valdivia').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#valdivia').textContent='40. CRP VALDIVIA - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck18 = document.querySelector('#closandes')
-ck18.addEventListener('change',()=>{
-if(ck18.checked) {
-    document.querySelector('#losandes').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#losandes').textContent='43. CRP LOS ANDES - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck19 = document.querySelector('#cpuertomontt')
-ck19.addEventListener('change',()=>{
-if(ck19.checked) {
-    document.querySelector('#puertomontt').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#puertomontt').textContent='45. CRP PUERTO MONTT - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck20 = document.querySelector('#csanfernando')
-ck20.addEventListener('change',()=>{
-if(ck20.checked) {
-    document.querySelector('#sanfernando').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#sanfernando').textContent='51. CRP SAN FERNANDO - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck21 = document.querySelector('#cquilpoe')
-ck21.addEventListener('change',()=>{
-if(ck21.checked) {
-    document.querySelector('#quilpoe').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#quilpoe').textContent='52. CRP QUILPOE - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck22 = document.querySelector('#clinares')
-ck22.addEventListener('change',()=>{
-if(ck22.checked) {
-    document.querySelector('#linares').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#linares').textContent='53. CRP LINARES - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck23 = document.querySelector('#cpuntaarenas')
-ck23.addEventListener('change',()=>{
-if(ck23.checked) {
-    document.querySelector('#puntaarenas').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#puntaarenas').textContent='55. CRP PUNTA ARENAS - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-
-const ck24 = document.querySelector('#csanantonio')
-ck24.addEventListener('change',()=>{
-if(ck24.checked) {
-    document.querySelector('#sanantonio').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#sanantonio').textContent='56. CRP SAN ANTONIO - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck25 = document.querySelector('#closangeles')
-ck25.addEventListener('change',()=>{
-if(ck25.checked) {
-    document.querySelector('#losangeles').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#losangeles').textContent='57. CRP LOS ANGELES - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck26 = document.querySelector('#ccalama')
-ck26.addEventListener('change',()=>{
-if(ck26.checked) {
-    document.querySelector('#calama').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#calama').textContent='58. CRP CALAMA - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck27 = document.querySelector('#cchillan')
-ck27.addEventListener('change',()=>{
-if(ck27.checked) {
-    document.querySelector('#chillan').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#chillan').textContent='62. CRP CHILLAN - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck28 = document.querySelector('#chuerfanos')
-ck28.addEventListener('change',()=>{
-if(ck28.checked) {
-    document.querySelector('#huerfanos').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#huerfanos').textContent='64. CRP HUERFANOS - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck29 = document.querySelector('#covalle')
-ck29.addEventListener('change',()=>{
-if(ck29.checked) {
-    document.querySelector('#ovalle').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#ovalle').textContent='68. CRP OVALLE - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck30 = document.querySelector('#cquillota')
-ck30.addEventListener('change',()=>{
-if(ck30.checked) {
-    document.querySelector('#quillota').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#quillota').textContent='72. CRP QUILLOTA - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck31 = document.querySelector('#cmiraflores')
-ck31.addEventListener('change',()=>{
-if(ck31.checked) {
-    document.querySelector('#miraflores').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#miraflores').textContent='76. CRP MIRAFRLORES - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck32 = document.querySelector('#ccastro')
-ck32.addEventListener('change',()=>{
-if(ck32.checked) {
-    document.querySelector('#castro').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#castro').textContent='79. CRP CASTRO - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-const ck33 = document.querySelector('#cvallenar')
-ck33.addEventListener('change',()=>{
-if(ck33.checked) {
-    document.querySelector('#vallenar').textContent='EN ESPERA'
-    cantEP++
-    document.querySelector('#cantidadEP').textContent = cantEP;
-} else {
-    document.querySelector('#vallenar').textContent='80. CRP VALLENAR - EJECUTADO'
-    cantEP--
-    document.querySelector('#cantidadEP').textContent = cantEP;
-}
-})
-
-
-
-
-let horas = 0, minutos = 0, segundos = 0;
-let intervalo = null;
-let pausado = false;
-
-const tiempo = document.querySelector('#tiempo');
-const btnIniciar = document.querySelector('#iniciar');
-const btnPausar = document.querySelector('#pausar');
-const btnDetener = document.querySelector('#detener');
-
-function formatearTiempo(h, m, s) {
-  return (
-    String(h).padStart(2, '0') + ':' +
-    String(m).padStart(2, '0') + ':' +
-    String(s).padStart(2, '0')
-  );
-}
-
-
-function actualizarTiempo() {
-  segundos++;
-  if (segundos === 60) {
-    segundos = 0;
-    minutos++;
-  }
-  if (minutos === 60) {
-    minutos = 0;
-    horas++;
-  }
-  tiempo.textContent = formatearTiempo(horas, minutos, segundos);
-}
-
-
-btnIniciar.addEventListener('click', () => {
-  if (!intervalo) {
+  btnIniciar.addEventListener('click', () => {
+    if (intervalo) return;
     intervalo = setInterval(actualizarTiempo, 1000);
     pausado = false;
     btnPausar.disabled = false;
     btnDetener.disabled = false;
-  }
-});
+  });
 
+  btnPausar.addEventListener('click', () => {
+    if (!pausado) {
+      clearInterval(intervalo);
+      intervalo = null;
+      pausado = true;
+      btnIniciar.textContent = 'Reanudar';
+    } else {
+      intervalo = setInterval(actualizarTiempo, 1000);
+      pausado = false;
+      btnIniciar.textContent = 'Iniciar';
+    }
+  });
 
-btnPausar.addEventListener('click', () => {
-  if (!pausado) {
+  btnDetener.addEventListener('click', () => {
     clearInterval(intervalo);
     intervalo = null;
-    pausado = true;
-    btnIniciar.textContent = 'Reanudar';
-  } else {
-    intervalo = setInterval(actualizarTiempo, 1000);
-    pausado = false;
+    horas = 0;
+    minutos = 0;
+    segundos = 0;
+    tiempo.textContent = formatearTiempo(horas, minutos, segundos);
     btnIniciar.textContent = 'Iniciar';
-  }
-});
-
-
-btnDetener.addEventListener('click', () => {
-  clearInterval(intervalo);
-  intervalo = null;
-  horas = 0;
-  minutos = 0;
-  segundos = 0;
-  tiempo.textContent = formatearTiempo(horas, minutos, segundos);
-  btnIniciar.textContent = 'Iniciar';
-  btnPausar.disabled = true;
-  btnDetener.disabled = true;
-});
-
-
-
-const anunciosvp = '¡ HAZLO SIMPLE HAZLO SERVIPAG !'
-const mensajesvp = document.querySelector('#mensajesvp')
-let cantidadm = 1
-
-let tiempom = setInterval(()=>{
-    mostrarMensajeanimado()
-},100)
-
-function mostrarMensajeanimado() {
-   const textosvp = anunciosvp.slice(0,cantidadm)
-   mensajesvp.textContent=textosvp
-   if(cantidadm>anunciosvp.length) {
-    clearInterval(tiempom)
-    setTimeout(()=>{
-        mensajesvp.textContent=''
-        cantidadm=1
-        tiempom= setInterval(()=>{
-            mostrarMensajeanimado()
-        },100)
-    },3000)
-   }
-  cantidadm++
+    btnPausar.disabled = true;
+    btnDetener.disabled = true;
+  });
 }
+
+function initMensajeAnimado() {
+  const texto = '¡ HAZLO SIMPLE HAZLO SERVIPAG !';
+  const salida = $('#mensajesvp');
+  let pos = 1;
+  let timer = null;
+
+  const tick = () => {
+    salida.textContent = texto.slice(0, pos);
+    if (pos > texto.length) {
+      clearInterval(timer);
+      setTimeout(() => {
+        salida.textContent = '';
+        pos = 1;
+        timer = setInterval(tick, 100);
+      }, 3000);
+      return;
+    }
+    pos += 1;
+  };
+
+  timer = setInterval(tick, 100);
+}
+
+function init() {
+  renderCounters();
+  bindCrpActions();
+  els.btnRecuperar.addEventListener('click', recuperarCrpOrdenado);
+  els.btnReset.addEventListener('click', limpiarStorageCRP);
+  initCronometro();
+  initMensajeAnimado();
+}
+
+init();

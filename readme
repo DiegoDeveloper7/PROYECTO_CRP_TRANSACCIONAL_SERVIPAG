@@ -1,13 +1,13 @@
-Proyecto desarollado como prototipo para la elaboracion de una APP WEB que simula el tablero de ejecución de CRP SERVIPAG. 
+Proyecto desarrollado como prototipo para la elaboración de una APP WEB que simula el tablero de ejecución de CRP SERVIPAG.
 
-La idea inicial del prototipo es mostrar una interfax mas limpia e intuitiva para ejecutar los archivos transaccionales que corresponden a cada CRP o agencia de recaudacion de SERVIPAG por sector geografico de Chile. 
+La idea inicial del prototipo es mostrar una interfaz más limpia e intuitiva para ejecutar los archivos transaccionales que corresponden a cada CRP o agencia de recaudación de SERVIPAG por sector geográfico de Chile.
 
-Dicha interfax modrnizada e inuitiva para el usuario intermedio de BAckend o CRM, ofrece la experiencia de visualizar los nombres de las diferentes sucursales agrupadas por sector, y el nuemro que la identifica del lado de los archivos generados por el proceso de sumatoria de transacciones diarias en horarios de fecha contable.
+Dicha interfaz modernizada e intuitiva para el usuario intermedio de Backend o CRM, ofrece la experiencia de visualizar los nombres de las diferentes sucursales agrupadas por sector, y el número que la identifica del lado de los archivos generados por el proceso de sumatoria de transacciones diarias en horarios de fecha contable.
 
-Tambien porpone la idea de contabilizar en tiempo real, la cantidad de surcursales que se van ejecutando, la cantidad que podria permanecr en tiempo de espera por algún motivo tecnico de generacion, y la cantidad de sucursales que faltan por ejecutarse. En pro de ir refrenciando los tiempos de ejecución de cada proceso particular y en genral. 
+También propone la idea de contabilizar en tiempo real, la cantidad de sucursales que se van ejecutando, la cantidad que podría permanecer en tiempo de espera por algún motivo técnico de generación, y la cantidad de sucursales que faltan por ejecutarse. En pro de ir referenciando los tiempos de ejecución de cada proceso particular y en general.
 
-El prototipo inicial esta fundamentado en tecnologias de arquitectura simple como HTML, CSS y JavaScript para la simulación lógica. Pero la propuesta final estaba fundamentada en la utilzación de tecnologias como REACT, para la elbaroración del Dashboard. 
+El prototipo inicial está fundamentado en tecnologías de arquitectura simple como HTML, CSS y JavaScript para la simulación lógica. Pero la propuesta final estaba fundamentada en la utilización de tecnologías como REACT, para la elaboración del Dashboard.
 
-Proyecto Presentado en Enero del 2025. y Pre-aprobado por la Jefatura correspondiente. 
+Proyecto presentado en enero del 2025 y pre-aprobado por la jefatura correspondiente.
 
-ING. Diego González. 
+ING. Diego González.

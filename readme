@@ -1,0 +1,13 @@
+Proyecto desarollado como prototipo para la elaboracion de una APP WEB que simula el tablero de ejecución de CRP SERVIPAG. 
+
+La idea inicial del prototipo es mostrar una interfax mas limpia e intuitiva para ejecutar los archivos transaccionales que corresponden a cada CRP o agencia de recaudacion de SERVIPAG por sector geografico de Chile. 
+
+Dicha interfax modrnizada e inuitiva para el usuario intermedio de BAckend o CRM, ofrece la experiencia de visualizar los nombres de las diferentes sucursales agrupadas por sector, y el nuemro que la identifica del lado de los archivos generados por el proceso de sumatoria de transacciones diarias en horarios de fecha contable.
+
+Tambien porpone la idea de contabilizar en tiempo real, la cantidad de surcursales que se van ejecutando, la cantidad que podria permanecr en tiempo de espera por algún motivo tecnico de generacion, y la cantidad de sucursales que faltan por ejecutarse. En pro de ir refrenciando los tiempos de ejecución de cada proceso particular y en genral. 
+
+El prototipo inicial esta fundamentado en tecnologias de arquitectura simple como HTML, CSS y JavaScript para la simulación lógica. Pero la propuesta final estaba fundamentada en la utilzación de tecnologias como REACT, para la elbaroración del Dashboard. 
+
+Proyecto Presentado en Enero del 2025. y Pre-aprobado por la Jefatura correspondiente. 
+
+ING. Diego González. 

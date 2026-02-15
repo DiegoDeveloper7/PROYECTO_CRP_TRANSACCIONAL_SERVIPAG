@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP TABLERO CRP SVP</title>
+    <link rel="stylesheet" href="./assets/estilos.css">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <a href="https://servipag-my.sharepoint.com/shared?id=%2Fpersonal%2Fkbobadilla%5Fservipag%5Fcl%2FDocuments%2FPLATAFORMA&listurl=%2Fpersonal%2Fkbobadilla%5Fservipag%5Fcl%2FDocuments" target="_blank" class="enlace1">PLATAFORMA</a>
+        
+       <h1 class="titulo">TABLERO DE EJECUCIÓN CRP</h1>
+   
+       <a href="https://portal.servipag.com/" target="_blank" class="enlace2">SERVIPAG</a>
+   </header> 
+   
+   <main>
+   
+        <div class="contadores">
+   
+         <div class="contadormas">
+           <label for="cantidadEJ">EJECUTADOS </label>
+           <span id="cantidadEJ">0</span>
+         </div>
+   
+         <div class="contadorep">
+           <label for="cantidadEP">EN ESPERA</label>
+           <span id="cantidadEP">0</span>
+         </div>
+   
+         <div class="contadormenos">
+           <label for="cantidadNE">NO EJECUTADOS</label>
+           <span id="cantidadNE">33</span>
+         </div>
+         
+         <div class="animacion">
+         <p id="mensajesvp"></p>
+        </div>
+   
+        </div>
+   
+       <div id="parrafos" class="pantallas">
+     
+          <ul class="grupocrp1" id="ulcrp1">
+           <li id="lascondes" class="liOff">1. CRP LAS CONDES - NO EJECUTADO</li>
+           <li id="sanbernardo" class="liOff">6. CRP SAN BERNARDO - NO EJECUTADO</li>
+           <li id="valparaiso" class="liOff">9. CRP VALPARAISO - NO EJECUTADO</li>
+           <li id="arica" class="liOff">11. CRP ARICA - NO EJECUTADO</li>
+           <li id="iquique" class="liOff">12. CRP IQUIQUE - NO EJECUTADO</li>
+           <li id="laserena" class="liOff">13. CRP LASERENA - NO EJECUTADO</li>
+           <li id="temuco" class="liOff">14. CRP TEMUCO -  NO EJECUTADO</li>
+           <li id="concepcion" class="liOff">15. CRP CONSEPCIÓN -  NO EJECUTADO</li>
+           <li id="talca" class="liOff">16. CRP TALCA - NO EJECUTADO</li>
+           <li id="rancagua" class="liOff">17. CRP RANCAGUA - NO EJECUTADO</li>
+           <li id="copiapo" class="liOff">18. CRP COPIAPÓ - NO EJECUTADO</li>
+       </ul>
+   
+       <ul class="grupocrp2" id="ulcrp2">
+           <li id="antofagasta" class="liOff">19. CRP ANTOFAGASTA - NO EJECUTADO</li>
+           <li id="osorno" class="liOff">22. CRP OSORNO -  NO EJECUTADO</li>
+           <li id="cardenalcaro" class="liOff">24. CRP CARDENAL CARO - NO EJECUTADO</li>
+           <li id="maipu" class="liOff">31. CRP MAIPU - NO EJECUTADO</li>
+           <li id="curico" class="liOff">32. CRP CURICÓ - NO EJECUTADO</li> 
+           <li id="valdivia" class="liOff">40. CRP VALDIVIA - NO EJECUTADO</li>
+           <li id="losandes" class="liOff">43. CRP LOS ANDES - NO EJECUTADO</li>
+           <li id="puertomontt" class="liOff">45. CRP PUERTO MONTT - NO EJECUTADO</li>
+           <li id="sanfernando" class="liOff">51. CRP SAN FERNANDO - NO EJECUTADO</li>
+           <li id="quilpoe" class="liOff">52. CRP QUILPOÉ - NO EJECUTADO</li>
+           <li id="linares" class="liOff">53. CRP LINARES - NO EJECUTADO</li>
+       </ul>
+   
+       <ul class="grupocrp3" id="ulcrp3">
+           <li id="puntaarenas" class="liOff">55. CRP PUNTA ARENAS - NO EJECUTADO</li>
+           <li id="sanantonio" class="liOff">56. CRP SAN ANTONIO - NO EJECUTADO</li>
+           <li id="losangeles" class="liOff">57. CRP LOS ANGELES - NO EJECUTADO</li>
+           <li id="calama" class="liOff">58. CRP CALAMA - NO EJECUTADO</li>
+           <li id="chillan" class="liOff">62. CRP CHILLAN - NO EJECUTADO</li>
+           <li id="huerfanos" class="liOff">64. CRP HUERFANOS - NO EJECUTADO</li>
+           <li id="ovalle" class="liOff">68. CRP OVALLE - NO EJECUTADO</li>
+           <li id="quillota" class="liOff">72. CRP QUILLOTA - NO EJECUTADO</li>
+           <li id="miraflores" class="liOff">76. CRP MIRAFLORES - NO EJECUTADO</li>
+           <li id="castro" class="liOff">79. CRP CASTRO - NO EJECUTADO</li>
+           <li id="vallenar" class="liOff">80. CRP VALLENAR - NO EJECUTADO</li>
+       </ul>
+   
+       <div id="temporizador" class="temporizador">
+           <h1 id="tiempo">00:00:00</h1>
+           <div>
+             <button id="iniciar" class="botonestmp">Iniciar</button>
+             <button id="pausar" class="botonestmp" disabled>Pausar</button>
+             <button id="detener" class="botonestmp" disabled>Detener</button>
+           </div>
+         </div>
+     
+       </div>
+   
+    
+   
+       <div id="botones" class="botones33">
+   
+           <div class="columna11" id="bpgrupo1">
+   
+          <div class="checkb">
+          <button onclick="CRPLasCondes('1. CRP LAS CONDES - EJECUTADO','boton1')" class="botonOff" id="blascondes">1. LAS CONDES</button>
+          <input type="checkbox" id="clascondes"> 
+          </div>
+   
+           <div class="checkb">
+          <button onclick="CRPSanBernardo('6. CRP SAN BERNARDO - EJECUTADO','boton6')" class="botonOff" id="bsanbernardo">6. SAN BERNARDO</button>
+          <input type="checkbox" id="csanbernardo"> 
+         </div>
+   
+         <div class="checkb">
+          <button onclick="CRPvalparaiso('9. CRP VALPARAISO - EJECUTADO','boton9')" class="botonOff" id="bvalparaiso">9. VALPARAISO</button>
+          <input type="checkbox" id="cvalparaiso"> 
+        </div>
+         
+        <div class="checkb">
+          <button onclick="CRParica('11. CRP ARICA - EJECUTADO','boton11')" class="botonOff" id="barica">11. ARICA</button>
+          <input type="checkbox" id="carica"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPiquique('12. CRP IQUIQUE - EJECUTADO','boton12')" class="botonOff" id="biquique">12. IQUIQUE</button>
+          <input type="checkbox" id="ciquique"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPlaserena('13. CRP LA SERENA - EJECUTADO','boton13')" class="botonOff" id="blaserena">13. LA SERENA</button>
+          <input type="checkbox" id="claserena"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPtemuco('14. CRP TEMUCO - EJECUTADO','boton14')" class="botonOff" id="btemuco">14. TEMUCO</button>
+          <input type="checkbox" id="ctemuco"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPconcepcion('15. CRP CONCEPCIÓN - EJECUTADO','boton15')" class="botonOff" id="bconcepcion">15. CONCEPCIÓN</button>
+          <input type="checkbox" id="cconcepcion"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPtalca('16. CRP TALCA - EJECUTADO','boton16')" class="botonOff" id="btalca">16. TALCA</button>
+          <input type="checkbox" id="ctalca"> 
+       </div>   
+   
+       <div class="checkb">
+          <button onclick="CRPrancagua('17. CRP RANCAGUA - EJECUTADO','boton17')" class="botonOff" id="brancagua">17. RANCAGUA</button>
+          <input type="checkbox" id="crancagua"> 
+       </div> 
+   
+       <div class="checkb">
+          <button onclick="CRPcopiapo('18. CRP COPIAPÓ - EJECUTADO','boton18')" class="botonOff" id="bcopiapo">18. COPIAPÓ</button>
+          <input type="checkbox" id="ccopiapo"> 
+       </div> 
+   
+          </div>
+   
+          <div class="columna11" id="bpgrupo2">
+   
+       <div class="checkb">
+          <button onclick="CRPantofagasta('19. CRP ANTOFAGASTA - EJECUTADO','boton19')" class="botonOff" id="bantofagasta">19. ANTOFAGASTA</button>
+          <input type="checkbox" id="cantofagasta"> 
+       </div> 
+   
+       <div class="checkb">
+          <button onclick="CRPosorno('22. CRP OSORNO - EJECUTADO','boton22')" class="botonOff" id="bosorno">22. OSORNO</button>
+          <input type="checkbox" id="cosorno"> 
+       </div> 
+       
+       <div class="checkb">
+          <button onclick="CRPcardenalcaro('24. CRP CARDENALCARO - EJECUTADO','boton24')" class="botonOff" id="bcardenalcaro">24. CARDENALCARO</button>
+          <input type="checkbox" id="ccardenalcaro"> 
+       </div>  
+       
+       <div class="checkb">
+          <button onclick="CRPmaipu('31. CRP MAIPU - EJECUTADO','boton31')" class="botonOff" id="bmaipu">31. MAIPU</button>
+          <input type="checkbox" id="cmaipu"> 
+       </div> 
+   
+       <div class="checkb">
+          <button onclick="CRPcurico('32. CRP CURICÓ - EJECUTADO','boton32')" class="botonOff" id="bcurico">32. CURICÓ</button>
+          <input type="checkbox" id="ccurico"> 
+       </div> 
+   
+       <div class="checkb">
+          <button onclick="CRPvaldivia('40. CRP VALDIVIA - EJECUTADO','boton40')" class="botonOff" id="bvaldivia">40. VALDIVIA</button>
+          <input type="checkbox" id="cvaldivia"> 
+       </div> 
+   
+       <div class="checkb">
+          <button onclick="CRPlosandes('43. CRP LOS ANDES - EJECUTADO','boton43')" class="botonOff" id="blosandes">43. LOS ANDES</button>
+          <input type="checkbox" id="closandes"> 
+       </div> 
+   
+       <div class="checkb">
+          <button onclick="CRPpuertomontt('45. CRP PUERTO MONTT - EJECUTADO','boton45')" class="botonOff" id="bpuertomontt">45. PUERTO MONTT</button>
+          <input type="checkbox" id="cpuertomontt"> 
+       </div> 
+   
+       <div class="checkb">
+          <button onclick="CRPsanfernando('51. CRP SAN FERNANDO - EJECUTADO','boton51')" class="botonOff" id="bsanfernando">51. SAN FERNANDO</button>
+          <input type="checkbox" id="csanfernando"> 
+       </div> 
+   
+       <div class="checkb">
+          <button onclick="CRPquilpoe('52. CRP QUILPOE - EJECUTADO','boton52')" class="botonOff" id="bquilpoe">52. QUILPOÉ</button>
+          <input type="checkbox" id="cquilpoe"> 
+       </div> 
+   
+       <div class="checkb">
+          <button onclick="CRPlinares('53. CRP LINARES - EJECUTADO','boton53')" class="botonOff" id="blinares">53.      LINARES</button>
+          <input type="checkbox" id="clinares"> 
+       </div>
+   
+       </div>
+   
+         <div class="columna11" id="bpgrupo3">
+   
+       <div class="checkb">    
+          <button onclick="CRPpuntaarenas('55. CRP PUNTA ARENAS - EJECUTADO','boton55')" class="botonOff" id="bpuntaarenas">55. PUNTA ARENAS</button>
+          <input type="checkbox" id="cpuntaarenas"> 
+       </div>
+   
+       <div class="checkb"> 
+          <button onclick="CRPsanantonio('56. CRP SAN ANTONIO - EJECUTADO','boton56')" class="botonOff" id="bsanantonio">56. SAN ANTONIO</button>
+          <input type="checkbox" id="csanantonio"> 
+       </div>  
+   
+       <div class="checkb"> 
+          <button onclick="CRPlosangeles('57. CRP LOS ANGELES - EJECUTADO','boton57')" class="botonOff" id="blosangeles">57. LOS ÁNGELES</button>
+          <input type="checkbox" id="closangeles"> 
+       </div>
+       
+       <div class="checkb">
+          <button onclick="CRPcalama('58. CRP CALAMA - EJECUTADO','boton58')" class="botonOff" id="bcalama">58. CALAMA</button>
+          <input type="checkbox" id="ccalama"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPchillan('62. CRP CHILLAN - EJECUTADO','boton62')" class="botonOff" id="bchillan">62. CHILLÁN</button>
+          <input type="checkbox" id="cchillan"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPhuerfanos('64. CRP HUERFANOS - EJECUTADO','boton64')" class="botonOff" id="bhuerfanos">64. HUERFANOS</button>
+          <input type="checkbox" id="chuerfanos"> 
+       </div>
+       
+       <div class="checkb">
+          <button onclick="CRPovalle('68. CRP OVALLE - EJECUTADO','boton68')" class="botonOff" id="bovalle">68. OVALLE</button>
+          <input type="checkbox" id="covalle"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPquillota('72. CRP QUILLOTA - EJECUTADO','boton72')" class="botonOff" id="bquillota">72. QUILLOTA</button>
+          <input type="checkbox" id="cquillota"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPmiraflores('76. CRP MIRAFRLORES - EJECUTADO','boton76')" class="botonOff" id="bmiraflores">76. MIRAFLORES</button>
+          <input type="checkbox" id="cmiraflores"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPcastro('79. CRP CASTRO - EJECUTADO','boton79')" class="botonOff" id="bcastro">79. CASTRO</button>
+          <input type="checkbox" id="ccastro"> 
+       </div>
+   
+       <div class="checkb">
+          <button onclick="CRPvallenar('80. CRP VALLENAR - EJECUTADO','boton80')" class="botonOff" id="bvallenar">80. VALLENAR</button>
+          <input type="checkbox" id="cvallenar"> 
+       </div>
+   
+       </div>
+   
+       </div>
+   
+       <div class="almacenadolocal">
+       <p id="crpguardados" class="lstexto">RECUPERACIÓN DE CRPS NO EJECUTADA</p>
+       <div>
+       <button id="crpalmacenados" class="lsboton1">RECUPERAR CRP</button>
+       <button id="clearStorage" class="lsboton2">REINICIAR CRP</button>
+       </div>
+       </div>
+   
+   </main>
+   
+   <footer class="piepagina">
+       <div class="ftcentro">
+       <h2 class="ftitulo1">PLATAFORMAS TECNOLÓGICAS</h2>
+       <h3 class="ftitulo2">SERVIPAG</h3>
+       <a href="https://diegodeveloper7.github.io/#" target="_blank"><h4 class="ftitulo6">DESIGNED & POWERED BY DIEGO G.</h4></a>
+      </div>
+   </footer>
+
+
+
+   <script src="./js/index.js"></script>
+
+</body>
+</html>
